@@ -1,0 +1,403 @@
+:root {
+  --blue: #2196f3;
+  --white: #ffffff;
+  --light-black: #2f303a;
+  --black: #212121;
+  --grey: #757575;
+  --bground: #f5f4fa;
+  --primary-font: "Roboto", sans-serif;
+  --secondary-font: "Raleway", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--primary-font);
+  background-color: var(--white);
+  color: var(--black);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* HEADER SECTION */
+.header {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  border: 1px 0px 0px 0px;
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.header__logo {
+  font-family: var(--secondary-font);
+  background-color: var(--white);
+}
+
+.header__logo a {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 30px;
+}
+
+.header__navigation ul {
+  display: flex;
+  gap: 40px;
+}
+
+.header__navigation {
+  background-color: var(--white);
+}
+
+.header__navigation a {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+}
+
+.header__navigation a:hover {
+  color: var(--blue);
+}
+
+.header__info a {
+  margin-left: 40px;
+  color: var(--grey);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+}
+
+.header__info a:hover {
+  color: var(--blue);
+}
+
+.header__info a:focus {
+  color: var(--blue);
+}
+
+/* HERO-SECTION */
+
+.hero-section {
+  height: 600px;
+  background-color: var(--light-black);
+}
+
+.hero-section .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero-section__request {
+  width: 200px;
+  height: 50px;
+  background-color: var(--blue);
+  box-shadow: 0px 4px 4px 0px #00000026;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0.06em;
+  color: var(--white);
+  border: 0px solid var(--blue);
+  margin-top: 30px;
+}
+
+.hero-section__title {
+  margin-top: 200px;
+  color: var(--white);
+  font-size: 44px;
+  font-weight: 900;
+  line-height: 60px;
+  margin-bottom: 30px;
+  letter-spacing: 0.06em;
+  text-align: center;
+}
+
+/* BUTTON  */
+.button {
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #6487a3;
+}
+
+.button:active {
+  background-color: var(--grey);
+}
+
+/* ABOUT SECTION  */
+.about {
+  /* width: 1170px; */
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.about__info h5 {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16px;
+  padding-bottom: 10px;
+}
+
+.about__info p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  color: var(--grey);
+}
+
+.about__info ul {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  justify-content: center;
+}
+
+.info__container {
+  padding-top: 94px;
+  height: 101px; 
+  width: 270px;
+}
+
+/* APPS SECTION  */
+
+.apps {
+  padding-top: 94px;
+}
+
+.apps__images {
+  display: flex;
+  justify-content: center;
+  gap:30px;
+  flex-wrap: wrap
+}
+
+.apps__image {
+  /* height: 294px; */
+  width: 370px;
+  height: auto;
+}
+
+.apps__title {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 42px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.team {
+  padding-top:94px;
+  padding-bottom: 94px;
+  background-color: var(--bground);
+}
+
+.team__title {
+  padding-top: 94px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.team__image {
+  width: 260px;
+  /* height: 270px; */
+  height: auto;
+}
+
+.team__card {
+  background-color: white;
+  margin-left: 30px;
+  box-shadow: 0px 2px 1px 0px #00000033;
+  box-shadow: 0px 1px 1px 0px #00000024;
+  box-shadow: 0px 1px 3px 0px #0000001F;
+
+}
+
+.team__cards {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 94px;
+}
+
+.team__cards p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18.75px;
+  color: var(--grey);
+  padding-bottom: 30px;
+  letter-spacing: 0.03em;;
+  text-align: center;
+}
+
+.team__cards h5 {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18.75px;
+  padding-top: 30px;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+
+/* FOOTER SECTION  */
+.footer {
+  background-color: var(--light-black);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer .container {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.footer__logo {
+  font-family: var(--secondary-font);
+  margin-bottom: 28px;;
+}
+
+.footer__logo a {
+  text-decoration: none;
+  color: var(--white);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 30px;
+}
+
+.footer__address {
+  margin-bottom: 12px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.41px;
+}
+
+.footer__info {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__info a {
+  padding-bottom: 12px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  color: var(--grey);
+}
+
+.footer__info a:hover {
+  color: var(--blue);
+}
+
+.footer__info a:focus {
+  color: var(--blue);
+}
+
+.logo {
+  color: var(--blue);
+}
+
+.footer__address {
+  color: var(--white);
+}
+.hero-section__buttons .container{
+  display: flex;
+  justify-content: center;
+}
+
+.hero-section__buttons button{
+  border-radius: 4px;
+  background-color: var(--bground);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26px;
+  color: var(--black);
+  border: 0px solid var(--blue);
+  cursor: pointer;
+  border-radius: 4px 0px 0px 0px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  padding: 6px 22px;
+  margin-right: 8px;
+  margin-bottom: 30px;
+
+
+
+}
+
+.hero-section__buttons button:hover {
+  background-color: var(--blue);
+}
+
+.hero-section__buttons button:focus {
+  background-color: red;
+}
+
+.hero-section__portofolio h5 {
+  margin-bottom: 4px;
+  padding-left: 24px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 36px;
+}
+
+.hero-section__portofolio p {
+  padding-left: 24px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  color: var(--grey);
+}
+
+.hero-section__portofolio ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.hero-section__portofolio li{
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.portofolio {
+  background-color: white;
+  border: 1px solid #EEEEEE
+}
+
+.portofolio img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  width: 1200px;
+  margin: auto;
+}
+
