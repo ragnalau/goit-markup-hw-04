@@ -42,15 +42,17 @@ a {
 /* HEADER SECTION */
 .header {
   margin-top: 25px;
-  margin-bottom: 25px;
+  /* padding-bottom: 25px; */
   border: 1px 0px 0px 0px;
 }
 
 .header .container {
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
   flex-wrap: wrap;
 }
+
 
 .header__logo {
   font-family: var(--secondary-font);
@@ -68,6 +70,15 @@ a {
   gap: 40px;
 }
 
+.header__navigation li {
+  padding-bottom: 32px;
+}
+.header__navigation li:hover {
+  border-bottom: 4px solid var(--blue);
+  border-radius: 2px;
+  padding-bottom: 28px;
+}
+
 .header__navigation {
   background-color: var(--white);
 }
@@ -83,7 +94,7 @@ a {
 }
 
 .header__info a {
-  margin-left: 40px;
+  margin-right: 40px;
   color: var(--grey);
   font-size: 14px;
   font-weight: 500;
@@ -92,6 +103,7 @@ a {
 
 .header__info a:hover {
   color: var(--blue);
+  width: 42px;
 }
 
 .header__info a:focus {
@@ -99,10 +111,13 @@ a {
 }
 
 /* HERO-SECTION */
-
 .hero-section {
   height: 600px;
   background-color: var(--light-black);
+  background-image: linear-gradient(0deg, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+ url("/images/hero-background.jpg");
+ background-size: cover;
+ background-repeat: no-repeat;
 }
 
 .hero-section .container {
@@ -153,8 +168,8 @@ a {
 /* ABOUT SECTION  */
 .about {
   /* width: 1170px; */
-  padding-top: 60px;
-  padding-bottom: 60px;
+  margin-top: 94px;
+  margin-bottom: 94px;
 }
 
 .about__info h5 {
@@ -187,7 +202,7 @@ a {
 /* APPS SECTION  */
 
 .apps {
-  padding-top: 94px;
+  padding-top: 188px;
 }
 
 .apps__images {
@@ -218,6 +233,10 @@ a {
 }
 
 .team__title {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 42.19px;
+  letter-spacing: 0.03em;
   padding-top: 94px;
   margin-bottom: 50px;
   text-align: center;
@@ -235,7 +254,7 @@ a {
   box-shadow: 0px 2px 1px 0px #00000033;
   box-shadow: 0px 1px 1px 0px #00000024;
   box-shadow: 0px 1px 3px 0px #0000001F;
-
+  padding-bottom: 30px;
 }
 
 .team__cards {
@@ -249,7 +268,6 @@ a {
   font-weight: 400;
   line-height: 18.75px;
   color: var(--grey);
-  padding-bottom: 30px;
   letter-spacing: 0.03em;;
   text-align: center;
 }
@@ -259,10 +277,69 @@ a {
   font-weight: 500;
   line-height: 18.75px;
   padding-top: 30px;
+  padding-bottom: 10px;
   letter-spacing: 0.03em;
   text-align: center;
 }
 
+.team__social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-top: 16px;
+  /* margin-bottom: 30px; */
+}
+
+.team__social li:hover{
+  background-color: var(--blue);
+  padding: 12px;
+  border-radius: 100%;
+}
+
+/* CUSTOMERS SECTION */
+.customers__title {
+margin-top: 94px;
+padding-bottom: 50px;
+font-size: 36px;
+font-weight: 700;
+line-height: 42.19px;
+letter-spacing: 0.03em;
+text-align: center;
+}
+
+.customers__logo .container {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+.customer__logo {
+fill: #AFB1B8;
+max-width: 93px;
+height: auto;
+}
+
+.customer__logo:hover {
+  fill: var(--blue);
+}
+
+.customer__space:hover {
+  border-color: var(--blue);
+}
+
+.customer__space {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+  top: 2493px;
+  left: 815px;
+  border: 1px solid #AFB1B8;
+  margin-bottom: 94px;
+}
 /* FOOTER SECTION  */
 .footer {
   background-color: var(--light-black);
@@ -317,6 +394,17 @@ a {
 
 .footer__info a:focus {
   color: var(--blue);
+}
+
+.footer__social {
+  width: 20px;
+  height: 20px;
+}
+
+.footer__socials li {
+  display: flex;
+  gap: 30px;
+  margin-top: 16px;
 }
 
 .logo {
@@ -400,4 +488,39 @@ a {
   width: 1200px;
   margin: auto;
 }
+.icon__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;;
+  width: 270px;
+  height: 120px;
+  background-color: rgba(245, 244, 250, 1);
+  margin-bottom: 30px;
+}
 
+.icon-mail {
+  margin-right: 10px;
+  width: 16px;
+  height: 12px;
+}
+
+.icon-phone {
+  margin-right: 10px;
+  width: 10px;
+  height: 16px;
+}
+
+.about__icon {
+  width: 70px;
+  height: 70px;
+}
+
+.icon__social {
+  width: 20px;
+  height: 20px;
+}
+
+.icon__social:hover {
+  stroke: white;
+  fill: white;
+}
