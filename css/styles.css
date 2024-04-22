@@ -160,7 +160,6 @@ a {
   color: var(--white);
   border: 0px solid var(--blue);
   margin-top: 30px;
-  margin-bottom: 200px;
 }
 
 .hero-section__title {
@@ -190,7 +189,7 @@ a {
 /* ABOUT SECTION  */
 .about {
   /* width: 1170px; */
-  margin-top: 94px;
+  margin-top: 64px;
   margin-bottom: 94px;
 }
 
@@ -432,6 +431,7 @@ a {
 .footer__info {
   display: flex;
   flex-direction: column;
+  margin-right: 70px;
 }
 
 .footer__info a {
@@ -486,20 +486,9 @@ a {
   background-color: var(--blue);
 }
 
-/*
-.footer__social:hover {
-  background-color: var(--blue);
-}
-
-.footer__socials {
-  display: flex;
-  gap: 10px;
-  margin-top: 16px;
-}
-*/
-.footer__contact {
+/* .footer__contact {
   margin-left: 94px;
-}
+} */
 
 .logo {
   color: var(--blue);
@@ -528,6 +517,7 @@ a {
   padding: 6px 22px;
   margin-right: 8px;
   margin-bottom: 30px;
+  margin-top: 94px;
 }
 
 .hero-section__buttons button:hover {
